@@ -14,5 +14,5 @@
 # limitations under the License.
 #
 
-FROM registry.access.redhat.com/ubi9
-RUN dnf -y update && dnf -y install git-core maven
+FROM registry.access.redhat.com/ubi9-minimal
+RUN microdnf -y update && microdnf -y install maven && microdnf -y clean all
