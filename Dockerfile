@@ -15,4 +15,4 @@
 #
 
 FROM registry.access.redhat.com/ubi9
-RUN dnf -y update && dnf -y install git-core maven && dnf -y clean all
+RUN dnf -y update && dnf -y install git-core maven-openjdk17 && dnf -y clean all
